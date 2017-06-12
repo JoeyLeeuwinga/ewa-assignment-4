@@ -1,11 +1,6 @@
 package models;
 
-import org.hibernate.validator.constraints.NotEmpty;
-import org.jetbrains.annotations.NotNull;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 
 
@@ -13,19 +8,12 @@ import java.util.ArrayList;
  * Created by Joey on 10-6-2017.
  */
 
-@Entity
+@XmlRootElement
 public class Group {
 
-    @Id
-    @GeneratedValue
     private Integer id;
-
-    @NotEmpty
-    @NotNull
     private String name;
-
     private Integer year;
-
     private ArrayList<Student> students;
 
 

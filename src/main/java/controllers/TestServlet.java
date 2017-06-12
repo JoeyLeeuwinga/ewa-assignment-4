@@ -11,7 +11,7 @@ import java.io.IOException;
  * Created by Joey on 8-6-2017.
  */
 @WebServlet(name = "main", urlPatterns = "/")
-public class MainServlet extends HttpServlet {
+public class TestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().write("Hello, Student!");

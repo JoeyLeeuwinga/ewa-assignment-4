@@ -1,25 +1,18 @@
 package models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
  * Created by Joey on 10-6-2017.
  */
 
-@Entity
+@XmlRootElement
 public class Role {
 
     private static final String STUDENT = "STUDENT";
     private static final String TEACHER = "ROLE_STAFF";
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
     private String name;
 
     public Role() {

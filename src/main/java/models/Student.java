@@ -4,16 +4,16 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.jetbrains.annotations.NotNull;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
  * Created by Joey on 10-6-2017.
  */
 
-@Entity
+@XmlRootElement
 public class Student {
 
     @Id
